@@ -64,22 +64,22 @@ nav a:hover {
 /* header */
 
 header {
-    border-radius: 10px;
-    min-width: 450px;
-    text-align: center;
-    color: var(--cor01);
+  border-radius: 10px;
+  min-width: 450px;
+  text-align: center;
+  color: var(--cor01);
 }
 
 blockquote {
-    padding: 15px 40px;
+  padding: 15px 40px;
 }
 
 blockquote a{
-    color: var(--cor01);
+  color: var(--cor01);
 }
 
 div h1:first-child {
-    color: var(--cor02);
+  color: var(--cor02);
 }
 
 .img-principal {
@@ -110,55 +110,55 @@ header p {
 /* main */
 
 main {
-    min-width: 450px;
+  min-width: 450px;
 }
 
 main p {
-    text-indent: 15px;
+  text-indent: 15px;
 }
 
 main a {
-    color: var(--cor03);
+  color: var(--cor03);
 }
 
 main section {
-    background: white;
-    padding: 20px;
+  background: white;
+  padding: 20px;
 }
 
 section h2 {
-    color: var(--cor04);
+  color: var(--cor04);
 }
 
 main ul {
-    list-style: inside;
-    column-count: 2;
-    column-gap: 20px;
+  list-style: inside;
+  column-count: 2;
+  column-gap: 20px;
 }
 
 article {
-    margin-top: 15px;
-    background-color: var(--cor02);
+  margin-top: 15px;
+  background-color: var(--cor02);
 }
 
 /* projetos */
 
 #projetos {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--cor03);
-    color: var(--cor01 );
-    margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor03);
+  color: var(--cor01 );
+  margin: 20px 0;
 }
 
 #projetos h2, h3{
-    text-align: center;
-    color: var(--cor01);
-    margin: 15px;
+  text-align: center;
+  color: var(--cor01);
+  margin: 15px;
 }
 
 #projetos h2 {
-    border-bottom: solid 1px var(--cor02);
+  border-bottom: solid 1px var(--cor02);
 }
 
 .container-item div {
@@ -254,44 +254,44 @@ article {
 /* aside */
 
 aside { 
-    background: var(--cor03);
-    color: white;
-    box-shadow: 0 0 8px rgba(0,0,0,0.2);
-    border-left: 5px solid var(--cor02);
-    border-radius: 10px;
-    min-width: 450px;
-    padding: 20px;
-    margin: 20px;
+  background: var(--cor03);
+  color: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  border-left: 5px solid var(--cor02);
+  border-radius: 10px;
+  min-width: 450px;
+  padding: 20px;
+  margin: 20px;
 }
 
 aside h2 {
-    margin-bottom: 10px;
-    color: var(--cor01);
+  margin-bottom: 10px;
+  color: var(--cor01);
 }
 
 aside p {
-    margin-bottom: 15px;
-    line-height: 1.4;
+  margin-bottom: 15px;
+  line-height: 1.4;
 }
 
 aside ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 aside ul li {
-    margin: 8px 0;
+  margin: 8px 0;
 }
 
 aside a {
-    color: var(--cor01);
-    text-decoration: none;
-    font-weight: bold;
+  color: var(--cor01);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 aside a:hover {
-    text-decoration: underline;
-    color: white;
+  text-decoration: underline;
+  color: white;
 }
 
 
