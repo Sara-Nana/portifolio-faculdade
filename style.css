@@ -1,0 +1,330 @@
+@charset "UTF-8";
+
+:root {
+  --cor01: #bbbbbb;
+  --cor02: #595959;
+  --cor03: #404040;
+  --cor04: #262626;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+
+body {
+  background-color: var(--cor03);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 auto;
+  max-width: 800px;
+  min-width: 450px;
+  padding: 20px 0px;
+}
+
+/* nav */
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+nav ul li {
+  border-radius: 4px;
+  margin: 0 15px;
+}
+
+nav ul li:hover {
+  background-color: var(--cor04);
+  color: var(--cor01);
+  transform: scale(1.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--cor01);
+  font-weight: bold;
+  padding: 10px;
+}
+
+nav a:hover {
+  text-decoration: none;
+  background-color: var(--cor04);
+  color: var(--cor01);
+  border-radius: 4px;
+    
+}
+
+/* header */
+
+header {
+    border-radius: 10px;
+    min-width: 450px;
+    text-align: center;
+    color: var(--cor01);
+}
+
+blockquote {
+    padding: 15px 40px;
+}
+
+blockquote a{
+    color: var(--cor01);
+}
+
+div h1:first-child {
+    color: var(--cor02);
+}
+
+.img-principal {
+  display: block;
+  background:url(img/foto-rosto02.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+}
+
+.divcontainer {
+  padding: 30px 0px;
+}
+
+header p {
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  color: var(--cor02);
+  font-size: 22px;
+  margin-top: 20px;
+  animation: moverMeuNome 5s linear infinite;
+}
+
+/* main */
+
+main {
+    min-width: 450px;
+}
+
+main p {
+    text-indent: 15px;
+}
+
+main a {
+    color: var(--cor03);
+}
+
+main section {
+    background: white;
+    padding: 20px;
+}
+
+section h2 {
+    color: var(--cor04);
+}
+
+main ul {
+    list-style: inside;
+    column-count: 2;
+    column-gap: 20px;
+}
+
+article {
+    margin-top: 15px;
+    background-color: var(--cor02);
+}
+
+/* projetos */
+
+#projetos {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor03);
+    color: var(--cor01 );
+    margin: 20px 0;
+}
+
+#projetos h2, h3{
+    text-align: center;
+    color: var(--cor01);
+    margin: 15px;
+}
+
+#projetos h2 {
+    border-bottom: solid 1px var(--cor02);
+}
+
+.container-item div {
+  background-size: cover;
+  margin: auto;
+  border-radius: 10px;
+  width: 300px;
+  height: 250px;
+}
+
+.imagem-projeto,
+.imagem-projeto2,
+.imagem-projeto3 {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.fundo {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.imagem-projeto .fundo {
+  background-image: url(img/p-pizzaria.png);
+}
+
+.imagem-projeto2 .fundo {
+  background-image: url(img/p-login.png);
+}
+
+.imagem-projeto3 .fundo {
+  background-image: url(img/p-lista.png);
+}
+
+.descricao {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.imagem-projeto:hover .fundo,
+.imagem-projeto2:hover .fundo,
+.imagem-projeto3:hover .fundo {
+  transform: scale(1.1);
+  filter: blur(2px);
+}
+
+.imagem-projeto:hover .overlay,
+.imagem-projeto2:hover .overlay,
+.imagem-projeto3:hover .overlay {
+  opacity: 1;
+}
+
+.imagem-projeto:hover .descricao,
+.imagem-projeto2:hover .descricao,
+.imagem-projeto3:hover .descricao {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* aside */
+
+aside { 
+    background: var(--cor03);
+    color: white;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    border-left: 5px solid var(--cor02);
+    border-radius: 10px;
+    min-width: 450px;
+    padding: 20px;
+    margin: 20px;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+    color: var(--cor01);
+}
+
+aside p {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 8px 0;
+}
+
+aside a {
+    color: var(--cor01);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+
+/* footer */
+
+footer {
+  background-color: var(--cor02);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  min-width: 450px;
+}
+
+/* animação */
+
+@keyframes moverMeuNome {
+  0% {
+    transform: translateX(100%); 
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
