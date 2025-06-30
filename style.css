@@ -164,6 +164,11 @@ article {
   border-bottom: solid 1px var(--cor02);
 }
 
+article {
+  border-radius: 15px;
+  padding: 10px 20px 50px 20px;
+}
+
 .container-item div {
   background-size: cover;
   margin: auto;
