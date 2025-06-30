@@ -14,7 +14,7 @@
 }
 
 html {
-  min-width: 450;
+  overflow-x: hidden;
 }
 
 /* body */
